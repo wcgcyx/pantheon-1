@@ -39,7 +39,8 @@ public class WebSocketMethodsFactory {
     addMethods(
         websocketMethods,
         new EthSubscribe(subscriptionManager, new SubscriptionRequestMapper(parameter)),
-        new EthUnsubscribe(subscriptionManager, new SubscriptionRequestMapper(parameter)));
+        new EthUnsubscribe(subscriptionManager, new SubscriptionRequestMapper(parameter)),
+        new CreateSideChain(subscriptionManager, new SubscriptionRequestMapper(parameter)));
     return websocketMethods;
   }
 
