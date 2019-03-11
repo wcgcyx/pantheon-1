@@ -25,6 +25,10 @@ jar {
   }
 }
 
+repositories {
+  mavenCentral()
+}
+
 dependencies {
   implementation project(':config')
   implementation project(':crypto')
@@ -67,4 +71,6 @@ dependencies {
   integrationTestImplementation 'junit:junit'
   integrationTestImplementation 'org.assertj:assertj-core'
   integrationTestImplementation 'org.mockito:mockito-core'
+
+  compile 'org.web3j:core:4.1.0'
 }
